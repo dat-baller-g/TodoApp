@@ -1,0 +1,89 @@
+// function Todo(props){
+//     const [lineThrough, setLineThrough] = useState("none");
+
+//     function handleClick(){      
+//         lineThrough ==="none" ?  setLineThrough("line-through") :  setLineThrough("none");
+//         // props.onStrike(props.id)
+        
+//     }
+
+//     function deleteItem(){
+//         props.onStrike(props.id)
+//     }
+
+//     return(
+//         <ul>
+//            <div className="item">
+//           <input type="checkbox" onClick={handleClick}/>
+//           <li style={{textDecoration: lineThrough, listStyleType: "none"}}>{props.todo}</li>
+//           </div>
+//           <span className="deleteButton">
+//          <button onClick={deleteItem} className="deleteButton">Delete</button>
+//          </span>
+//         </ul>
+//     )
+// }
+
+// export default Todo
+
+
+
+// function Input(props){
+
+//   const [newItem, setNewItem] = useState("");
+
+//   const handleChange = () =>{
+
+//   };
+
+//   const handleSubmit = () =>{
+
+//   }
+
+//     return(
+//         <form className='form' onClick={handleSubmit} >
+//         <input onChange={handleChange}  type="text" name="inputItem" value={newItem}/>
+//         <button type='submit'>Add</button>
+//       </form>
+//     )
+// }
+
+// export default Input
+
+
+
+
+// import React, { useState } from "react"
+
+// const Todo = (props) => {
+//   const item = props.item
+//   // const setItem = props.setItem
+//   const deleteItem = props.deleteItem
+
+//   const [checker, setChecker] = useState(true);
+  
+
+//  const handleClick = () =>{
+
+//     setChecker(!checker);      
+   
+//  } 
+
+//  const deleteTodo = () =>{
+//   setChecker(!checker); 
+//    deleteItem(props.id);
+//    setChecker(!checker); 
+// } 
+
+//   return (
+//    <div >
+//       <div onClick={handleClick} className="myInput" />
+//       {/* <li style={checked?{textDecoration: "line-through"}:{textDecoration: "none"} }>{item}</li> */}
+//       <li style={{textDecoration: !checker? "line-through" : "none"}}>{item}</li>
+//       <button style={{float:"right"}} onClick={deleteTodo}>Delete</button>
+//     </div>
+    
+//   )
+// }
+
+// export default Todo
